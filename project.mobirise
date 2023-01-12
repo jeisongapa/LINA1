@@ -1,6 +1,6 @@
 {
   "settings": {
-    "currentPage": "index.html",
+    "currentPage": "amarres.html",
     "theme": {
       "name": "cosmetologyamp",
       "title": "CosmetologyAMP",
@@ -64,7 +64,7 @@
     "siteUrl": false,
     "cookiesAlert": false,
     "gdpr": false,
-    "uniqCompNum": 58,
+    "uniqCompNum": 59,
     "versionPublish": "5.7.4",
     "screenshot": "screenshot.png",
     "cssOptimize": true,
@@ -144,7 +144,7 @@
               }
             },
             ".mbr-section-title": {
-              "color": "#fac769"
+              "color": "#cb3234"
             },
             ".mbr-text, .mbr-section-btn": {
               "color": "#fef3f5"
@@ -588,6 +588,47 @@
           "_JSplaceholders": [],
           "_cid": "tpc32jhjFl",
           "_anchor": "header04-1d",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "header2",
+          "_sourceTheme": "coworkingamp",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            "& when (@fullScreen)": {
+              ".container": {
+                "background-image": "url(@bgImage)",
+                "background-size": "cover",
+                "background-repeat": "no-repeat",
+                "width": "100%",
+                "height": "80vh"
+              },
+              ".section_title": {
+                "position": "relative",
+                "z-index": "1",
+                "top": "50%",
+                "left": "50%",
+                "transform": "translate(-50%, -50%)"
+              }
+            },
+            ".mbr-section-title": {
+              "color": "#cb3234"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#fef3f5"
+            }
+          },
+          "_customHTML": "<section class=\"coworkingamp-header2 header2\" group=\"Headers\" plugins=\"amp-main\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" value=\"#000000\" name=\"bgColor\">\n        <input type=\"Image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background3.jpg\" name=\"bgImage\" condition=\"fullScreen\">\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"section_title\">\n            <h3 class=\"mbr-fonts-style mbr-section-subtitle align-center mbr-white mbr-semibold\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\">BUILDING TOGETHER</h3>\n            <h1 class=\"mbr-fonts-style mbr-section-title align-center mbr-white mbr-semibold mbr-pb-2\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Llámanos al </b><br><b>+1 347 547 6711</b></h1>\n            <h3 class=\"mbr-fonts-style mbr-text align-center mbr-white\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Contáctese en este momento con el maestro superior</h3>\n            <div class=\"mbr-section-btn align-center mbr-pt-5\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\" mbr-buttons mbr-theme-style=\"display-4\"><a class=\"btn btn-md btn-primary\" href=\"tel:19172310260\" data-app-placeholder=\"Type Text\"><span class=\"fa fa-whatsapp mbr-iconfont mbr-iconfont-btn\"></span>\n                    LLÁMANOS</a></div>\n        </div>\n    </div>\n</section>",
+          "_JSplaceholders": [],
+          "_PHPplaceholders": [],
+          "_anchor": "header2-1m",
+          "_isUserblock": true,
+          "_cid": "tsLdfEY5Bn",
           "_protectedParams": [],
           "_global": false,
           "_once": false,
